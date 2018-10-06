@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NavigateActivity">
+    <com.widget.navigate.MenuDrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--内容  区域-->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/fake"
+            />
+        <!--侧滑区域  LinearLayout    ColorDrawable -->
+        <com.widget.navigate.MenuContentLayout
+            android:layout_width="350dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:maxTranslationX="66dp"
+            android:background="@color/colorPrimaryDark"
+            >
+            <TextView
+                android:layout_marginTop="50dp"
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/circle"
+                android:text="朋友圈"
+                android:onClick="test"
+                />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/wallet"
+                android:onClick="test"
+                android:text="钱包" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券" />
+
+            <TextView
+                style="@style/MenuText"
+                android:drawableLeft="@drawable/coupon"
+                android:onClick="test"
+                android:text="优惠券" />
+        </com.widget.navigate.MenuContentLayout>
+    </com.widget.navigate.MenuDrawerLayout>
+
+</RelativeLayout>
